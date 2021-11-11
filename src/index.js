@@ -25,13 +25,14 @@ function countryGet(name) {
         .then(data => {
             if (data.length > 10) {
                 errorPopUpList();
-            } else if (data.length > 1) {
+            } else if (data.length > 2 && data.length <= 10) {
                 renderCountriesList(data);
-            } else if (countryCard !== 'null') {
-                const countryCard = document.querySelector('.country__option')
+            } else if (countryCard (data[0])) {
+                
                 console.log(countryCard)
                 renderCountries(data);
             }
+            
         })
         .catch(() => {
             errorPopUp()
