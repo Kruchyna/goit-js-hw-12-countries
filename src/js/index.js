@@ -22,17 +22,21 @@ refs.country.addEventListener('click', e => {
   return;
 });
 
-function onInput() {
-  if (!refs.input.value) return markupOutput(0);
+function onInput(event) {
+  const userRequest = event.target.value.trim();
+  if (!userRequest) return;
+
+  /*if (!refs.input.value) return markupOutput(0);
 
   if (!refs.input.value.match(/^[a-zA-Z,() ']*$/)) {
     markupOutput(0);
     return errMsg('415', 'Use latin alphabet on the search!');
   }
+  */
 
   fetchCountries(refs.input.value).then(data => {
-    if (!data.length) {
-      markupOutput(0);
+    if (!data) {
+     /* markupOutput(0);*/
       return errMsg(
         data.status,
         `Country "${refs.input.value}" is not found. Please specify your request!`,
@@ -40,12 +44,12 @@ function onInput() {
     }
 
     if (data.length > 10) {
-      markupOutput(0);
+      /*markupOutput(0);*/
       errMsg('300', `Found ${data.length} matches. Enter a more specific request!`);
     } else if (data.length > 2 && data.length <= 10) {
       markupOutput(countriesList(data));
     } else {
-      markupOutput(countryCard(data[0]));
+      markupOutput(countryCard(...data));
     }
     return;
   });
