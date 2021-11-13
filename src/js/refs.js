@@ -1,8 +1,11 @@
-// export default {
-//     // inputForm: document.querySelector('.form__country'),
-//     // inputValue: document.querySelector('.form__country-input'),
-//     divContainer: document.querySelector('.countrys__block'),
-//     // countryInfo: document.querySelector('.country__info'),
-//     // countryItem: document.querySelector('.country__list-item'),
-//     // countryList: document.querySelector('.country__list')
-// }
+export default {
+    // weather widget
+    weatherContainer: document.getElementById('widget'),
+    searchForm: document.querySelector('.search'),
+    showWidgetBtn: document.getElementById('showWidget'),
+    card: document.querySelector('.card')
+    // gallery images
+    // list: document.getElementById('list'),
+    // form: document.getElementById('form'),
+    // loadMoreBtn: document.getElementById('loadMore'),
+}

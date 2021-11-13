@@ -1,34 +1,34 @@
 {
-  "name": "goit-js-hw-12-countries",
+  "name": "parcel-project-template",
   "version": "1.1.0",
   "description": "",
   "main": "index.js",
-  "homepage": "https://Kruchyna.github.io/goit-js-hw-12-countries",
+  "homepage": "https://github.com/Kruchyna/goit-js-hw-12-countries",
   "scripts": {
     "dev": "parcel src/*.html",
     "build": "parcel build src/*.html --public-url /goit-js-hw-12-countries/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/github.com/Kruchyna/goit-js-hw-12-countries.git"
+    "url": "git+https://github.com/goitacademy/parcel-project-template.git"
   },
   "keywords": [],
-  "author": "KRUCHYNA ELENA <kruchynaelena@gmail.com@gmail.com>",
+  "author": "Alexander Repeta <alexander.repeta@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/github.com/Kruchyna/goit-js-hw-12-countries/issues"
+    "url": "https://github.com/goitacademy/parcel-project-template/issues"
   },
   "devDependencies": {
-    "@pnotify/mobile": "^5.2.0",
     "parcel-bundler": "^1.12.5",
     "parcel-plugin-handlebars-precompile": "^1.0.2",
     "parcel-plugin-nuke-dist": "^1.0.1",
+    "pnotify": "^5.2.0",
     "posthtml-include": "^1.6.2",
     "sass": "^1.32.8"
   },
   "dependencies": {
-    "@pnotify/core": "^5.2.0",
-    "@pnotify/countdown": "^5.2.0",
-    "animate.css": "^4.1.1"
+    "debounce": "^1.2.1",
+    "handlebars": "^4.7.7",
+    "lodash.debounce": "^4.0.8"
   }
 }
